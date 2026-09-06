@@ -2,7 +2,9 @@
 
 洛谷文章评论区**只读**嵌入组件。输入文章链接即可生成 iframe 地址，风格类似 giscus，但只展示、不发布。
 
-界面与数据字段完整移植自 [luogu-saver-next](https://github.com/Federico2903/luogu-saver-next) 的
+由 [洛谷保存站](https://www.luogu.me) 提供数据支持。
+
+界面与数据字段完整移植自 [luogu-saver](https://github.com/laikit-dev/luogu-saver) 的
 `ArticleComments` 组件（头像、用户名颜色、OI / ICPC 等级徽章、楼层、时间、来源说明），
 数据源为 `https://api.luogu.me`（`access-control-allow-origin: *`，可直连）。
 
@@ -105,3 +107,15 @@ https://example.com/#/article/lwr2bdre
 上游在数据过期时会派发抓取任务；本项目无 WebSocket，改为在数据 `stale` 时延迟 8 秒重取一次。
 
 组件**只读**：不提供发布、点赞、删除等写入能力。数据版权归洛谷及原作者所有。
+
+## 致谢
+
+本项目由 [洛谷保存站](https://www.luogu.me) 提供数据与接口支持，界面与字段逻辑移植自
+[laikit-dev/luogu-saver](https://github.com/laikit-dev/luogu-saver)。
+
+## 许可证
+
+[GNU Affero General Public License v3.0](LICENSE)（AGPL-3.0）。
+
+- 界面与数据字段的移植逻辑来源于 [laikit-dev/luogu-saver](https://github.com/laikit-dev/luogu-saver)（AGPL-3.0）。
+- 数据由 [洛谷保存站](https://www.luogu.me) 提供，仅供只读展示；数据版权归洛谷及原作者所有。

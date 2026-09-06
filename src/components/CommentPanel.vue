@@ -140,11 +140,14 @@ defineExpose({ load, refresh });
         </div>
 
         <footer v-if="showSourceNote && state === 'ready' && comments.length > 0" class="panel-footer">
-            <span>
+            <span class="footer-source">
                 评论来源于
                 <a :href="articleUrl" target="_blank" rel="noopener noreferrer">洛谷</a>
                 <template v-if="stale"> · 正在后台更新</template>
                 <template v-if="syncedText">，最后同步于 {{ syncedText }}</template>
+            </span>
+            <span class="footer-support">
+                由 <a href="https://www.luogu.me" target="_blank" rel="noopener noreferrer">洛谷保存站</a> 提供支持
             </span>
         </footer>
     </section>
@@ -335,5 +338,13 @@ defineExpose({ load, refresh });
     font-size: 12px;
     color: var(--ui-muted-text-color);
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    line-height: 1.6;
+}
+
+.footer-support a {
+    font-weight: 600;
 }
 </style>

@@ -1,6 +1,6 @@
 /**
  * Comment data shapes, ported verbatim from
- * luogu-saver-next/packages/frontend/src/types/comment.d.ts
+ * laikit-dev/luogu-saver (packages/frontend/src/types/comment.d.ts)
  */
 
 export interface CommentAuthor {

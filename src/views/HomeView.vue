@@ -341,6 +341,10 @@ watch(activeId, id => {
                 只读展示，不支持发布评论。数据版权归洛谷及原作者所有 · API:
                 <code>api.luogu.me</code>
             </span>
+            <span>
+                由 <a href="https://www.luogu.me" target="_blank" rel="noopener noreferrer">洛谷保存站</a>
+                提供数据支持 · <a href="https://github.com/laikit-dev/luogu-saver" target="_blank" rel="noopener noreferrer">laikit-dev/luogu-saver</a> · AGPL-3.0
+            </span>
         </footer>
     </div>
 </template>
@@ -621,6 +625,10 @@ watch(activeId, id => {
     font-size: 12px;
     color: var(--ui-muted-text-color);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    line-height: 1.6;
 }
 
 code {

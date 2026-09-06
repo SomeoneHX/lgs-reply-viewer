@@ -5,6 +5,10 @@
     "type": "module",
     "description": "Read-only Luogu article comments widget, embeddable via iframe (giscus-style)",
     "license": "AGPL-3.0-or-later",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SomeoneHX/lgs-reply-viewer.git"
+    },
     "scripts": {
         "dev": "vite",
         "build": "vue-tsc -b && vite build",
