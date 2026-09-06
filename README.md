@@ -37,7 +37,7 @@ npm run preview
 ### 1. 脚本（推荐，自动高度）
 
 ```html
-<script src="https://<你的域名>/embed.js"
+<script src="https://someonehx.github.io/lgs-reply-viewer/embed.js"
         data-article="lwr2bdre"
         data-theme="auto"
         data-collapse="20"
@@ -50,7 +50,7 @@ npm run preview
 
 ```html
 <iframe
-    src="https://<你的域名>/#/embed?article=lwr2bdre&theme=auto"
+    src="https://someonehx.github.io/lgs-reply-viewer/#/embed?article=lwr2bdre&theme=auto"
     loading="lazy"
     style="width: 100%; border: 0"
 ></iframe>
