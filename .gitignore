@@ -1,0 +1,16 @@
+node_modules
+dist
+dist-ssr
+.DS_Store
+*.local
+.vite
+*.log
+.idea
+.vscode/*
+!.vscode/extensions.json
+.env
+.env.*
+!.env.example
+
+# workspace memory (project notes, not for the public repo)
+.workbuddy/

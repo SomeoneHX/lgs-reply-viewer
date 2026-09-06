@@ -1,0 +1,170 @@
+/* ==========================================================================
+   LGS Reply Viewer — global tokens
+   Ported from luogu-saver-next/src/styles/global.css (light palette kept
+   identical), with a dark variant and an iframe-friendly flat surface.
+   ========================================================================== */
+
+:root {
+    --ui-space-1: 4px;
+    --ui-space-2: 8px;
+    --ui-space-3: 12px;
+    --ui-space-4: 16px;
+    --ui-space-5: 20px;
+    --ui-space-6: 24px;
+    --ui-space-8: 32px;
+
+    --ui-control-gap: var(--ui-space-3);
+    --ui-inline-gap: var(--ui-space-2);
+
+    /* Luogu user colours */
+    --ui-user-red-color: #e74c3c;
+    --ui-user-orange-color: #e67e22;
+    --ui-user-purple-color: #8e44ad;
+    --ui-user-green-color: #5eb95e;
+    --ui-user-blue-color: #0e90d2;
+    --ui-user-gray-color: #bbbbbb;
+    --ui-user-cheater-color: #996600;
+
+    /* Prize badge colours */
+    --ui-prize-green-color: #52c41a;
+    --ui-prize-blue-color: #3498db;
+    --ui-prize-gold-color: #ffc116;
+}
+
+:root,
+:root[data-theme='light'] {
+    color-scheme: light;
+
+    --ui-body-color: #f6f9fd;
+    --ui-primary-color: #2f6db5;
+    --ui-primary-color-hover: #4b83c2;
+    --ui-primary-color-suppl: #8ab7dd;
+
+    --ui-card-color: #ffffff;
+    --ui-surface-color: transparent;
+    --ui-panel-color: rgba(47, 109, 181, 0.08);
+    --ui-card-title-color: #10233f;
+    --ui-text-color: #10233f;
+    --ui-secondary-text-color: #475569;
+    --ui-muted-text-color: #64748b;
+    --ui-border-color: rgba(47, 109, 181, 0.14);
+    --ui-control-border-color: rgba(47, 109, 181, 0.18);
+    --ui-control-border-hover-color: rgba(47, 109, 181, 0.36);
+    --ui-control-placeholder-color: #94a3b8;
+    --ui-code-background-color: #f1f5f9;
+    --ui-danger-color: #e11d48;
+    --ui-danger-soft: rgba(225, 29, 72, 0.08);
+    --ui-card-shadow: none;
+}
+
+:root[data-theme='dark'] {
+    color-scheme: dark;
+
+    --ui-body-color: #0f172a;
+    --ui-primary-color: #6ea8e8;
+    --ui-primary-color-hover: #8cc0f4;
+    --ui-primary-color-suppl: #2f6db5;
+
+    --ui-card-color: #16213a;
+    --ui-surface-color: transparent;
+    --ui-panel-color: rgba(148, 163, 184, 0.12);
+    --ui-card-title-color: #e8eef7;
+    --ui-text-color: #e2e8f0;
+    --ui-secondary-text-color: #cbd5e1;
+    --ui-muted-text-color: #94a3b8;
+    --ui-border-color: rgba(148, 163, 184, 0.2);
+    --ui-control-border-color: rgba(148, 163, 184, 0.28);
+    --ui-control-border-hover-color: rgba(148, 163, 184, 0.5);
+    --ui-control-placeholder-color: #64748b;
+    --ui-code-background-color: rgba(148, 163, 184, 0.14);
+    --ui-danger-color: #fb7185;
+    --ui-danger-soft: rgba(251, 113, 133, 0.12);
+    --ui-card-shadow: none;
+
+    --ui-user-gray-color: #9aa7b8;
+    --ui-user-cheater-color: #c99a2e;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:
+        -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+        'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ui-text-color);
+    background: var(--ui-body-color);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* The embed surface must be flat & transparent so it inherits the host page. */
+body.is-embed {
+    background: transparent;
+}
+
+a {
+    color: var(--ui-primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code,
+pre {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+button {
+    font-family: inherit;
+}
+
+::selection {
+    background: var(--ui-primary-color);
+    color: #fff;
+}
+
+/* Luogu user name colour classes (port) */
+.user-Red {
+    color: var(--ui-user-red-color) !important;
+}
+.user-Orange {
+    color: var(--ui-user-orange-color) !important;
+}
+.user-Purple {
+    color: var(--ui-user-purple-color) !important;
+}
+.user-Green {
+    color: var(--ui-user-green-color) !important;
+}
+.user-Blue {
+    color: var(--ui-user-blue-color) !important;
+}
+.user-Gray {
+    color: var(--ui-user-gray-color) !important;
+}
+.user-Cheater {
+    color: var(--ui-user-cheater-color) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+    }
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>LGS Reply Viewer — 嵌入示例</title>
+        <style>
+            :root {
+                color-scheme: light dark;
+            }
+            body {
+                margin: 0;
+                padding: 40px 20px;
+                font-family:
+                    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+                    'Microsoft YaHei', sans-serif;
+                background: #f6f9fd;
+                color: #10233f;
+            }
+            main {
+                max-width: 720px;
+                margin: 0 auto;
+                background: #fff;
+                border: 1px solid rgba(47, 109, 181, 0.14);
+                border-radius: 10px;
+                padding: 28px;
+            }
+            h1 {
+                margin: 0 0 4px;
+                font-size: 20px;
+            }
+            p.lead {
+                margin: 0 0 24px;
+                color: #64748b;
+                font-size: 14px;
+            }
+            .divider {
+                height: 1px;
+                background: rgba(47, 109, 181, 0.14);
+                margin: 24px 0;
+            }
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background: #0f172a;
+                    color: #e2e8f0;
+                }
+                main {
+                    background: #16213a;
+                    border-color: rgba(148, 163, 184, 0.2);
+                }
+                .divider {
+                    background: rgba(148, 163, 184, 0.2);
+                }
+                p.lead {
+                    color: #94a3b8;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>嵌入示例：洛谷文章评论</h1>
+            <p class="lead">
+                下面这块内容完全由 iframe 渲染，宿主页面只负责加载一行脚本，高度自动同步。
+            </p>
+
+            <div class="divider"></div>
+
+            <!-- 只读评论区：改 data-article 即可切换文章 -->
+            <script src="./embed.js" data-article="lwr2bdre" data-theme="auto" data-collapse="20" async></script>
+
+            <div class="divider"></div>
+
+            <p class="lead" style="margin: 0">
+                第二条：同一页面可以嵌入多个实例。
+            </p>
+            <div style="height: 16px"></div>
+            <script src="./embed.js" data-article="6pmxxgus" data-theme="auto" data-max="3" async></script>
+        </main>
+    </body>
+</html>
