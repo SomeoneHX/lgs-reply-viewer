@@ -109,10 +109,10 @@ watch(themeMode, syncTheme);
 
 <style scoped>
 .embed-root {
-    /* Flat: no padding, no border, transparent background — the host page owns
-       the surrounding chrome. */
+    /* Flat: no card chrome, but a small left/right inset so headings, avatars,
+       floors and timestamps aren't pressed against the iframe edge. */
     margin: 0;
-    padding: 0;
+    padding: 0 var(--ui-space-4);
     background: transparent;
     color: var(--ui-text-color);
     font-size: 14px;
