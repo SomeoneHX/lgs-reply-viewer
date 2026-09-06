@@ -190,6 +190,9 @@ defineExpose({ load, refresh });
     align-items: center;
     gap: 6px;
     min-width: 0;
+    /* Take the leftover width next to the refresh button so the article
+       title isn't squeezed into a percentage of a self-sized flex item. */
+    flex: 1 1 auto;
 }
 
 .heading-icon {
@@ -216,7 +219,10 @@ defineExpose({ load, refresh });
 .heading-article {
     font-size: 12px;
     color: var(--ui-muted-text-color);
-    max-width: 46%;
+    /* Grow inside .panel-heading to use real leftover space instead of a
+       percentage of the flex container's self-sized width. */
+    flex: 1 1 auto;
+    min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
